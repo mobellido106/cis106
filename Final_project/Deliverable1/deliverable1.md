@@ -52,13 +52,13 @@ The "Speed King." LiteSpeed is a proprietary (paid) server that is a drop-in rep
 * **Download:** [LiteSpeed](https://www.litespeedtech.com/products/litespeed-web-server/download) 
 
 ### comparison Summary
-| server    | primary strength    | License     | Best for                       |
-| --------- | ------------------- | ----------- | ------------------------------ |
-| Apache    | Flexibility         | Open-Source | Custom configuration           |
-| Nginx     | High concurrency    | Open-Source | Reverse proxy and high traffic |
-| IIS       | Windows Integration | Proprietary | ASP.NET & Corporative IT       |
-| LiteSpeed | Performance/CMS     | Commercial  | WordPress hosting              |
-| Caddy     | Easy to Use         | Open source | Quick setup/Auto               |
+| server    | primary strength    | License     | Best for                                                                   |
+| --------- | ------------------- | ----------- | -------------------------------------------------------------------------- |
+| Apache    | Flexibility         | Open-Source | Custom configuration                                                       |
+| Nginx     | High concurrency    | Open-Source | Reverse proxy and high traffic                                             |
+| IIS       | Windows Integration | Proprietary | [ASP.NET](https://dotnet.microsoft.com/en-us/apps/aspnet) & Corporative IT |
+| LiteSpeed | Performance/CMS     | Commercial  | WordPress hosting                                                          |
+| Caddy     | Easy to Use         | Open source | Quick setup/Auto                                                           |
 
 
 ## 3. What is virtualization?
@@ -123,7 +123,7 @@ A firewall is a network security system that acts as a barrier between a trusted
 * **Encryption:** All data exchanged between the SSH client (your computer) and the SSH server (the remote machine) is encrypted to prevent eavesdropping or interception.
 * **Authentication:** SSH uses strong authentication methods to verify the identity of both the user and the server. The most common method is public-key cryptography, using a public/private key pair, which is more secure than traditional passwords.
 * **Data Integrity:** The protocol ensures that data has not been altered during transmission using hashing algorithms.
-* **Client-Server Model**: SSH operates on a client-server architecture, where the client initiates a connection to a server that is listening for requests, `typically on TCP port 22`.
+* **Client-Server Model**: SSH operates on a client-server architecture, where the client initiates a connection to a server that is listening for requests, **`typically on TCP port 22`**.
 * **Tunneling/Port Forwarding:** SSH can create secure tunnels to forward other network traffic securely through the encrypted SSH connection, which is useful for accessing services behind firewalls or securing unencrypted applications. 
 
 **Common Uses**
@@ -153,7 +153,7 @@ An IP address (Internet Protocol address) is a unique numerical label assigned t
 ## 11. What is a network mask?
 ![img](subnetmask.png)
 A network mask (or subnet mask) is used in IP networking to define the range of IP addresses that are part of a specific subnet. It helps devices (like routers and computers) understand which portion of an IP address refers to the network and which part refers to the host.
-A subnet mask is a `32-bit number` used in IP networking to divide an IP address into two parts: **the network portion and the host portion**. It helps devices identify which part of the IP address refers to the network and which part refers to the specific device (host) within that network.
+A subnet mask is a **`32-bit number`** used in IP networking to divide an IP address into two parts: **the network portion and the host portion**. It helps devices identify which part of the IP address refers to the network and which part refers to the specific device (host) within that network.
 
 In simpler terms, the subnet mask tells a device whether another IP address is part of the same local network or if it is outside the local network and requires routing.
 
@@ -164,14 +164,14 @@ A port is a number used to identify a specific service or application on a devic
 
 **Common Port Numbers**
  
-| Port  | Service                   |
-| ----- | ------------------------- |
-| 20/21 | FTP (file transfer)       |
-| 22    | SSH (secure remote login) |
-| 25    | SMTP (email sending)      |
-| 53    | DNS (domain name system)  |
-| 80    | HTTP (websites)           |
-| 443   | HTTPS (secure websites)   |
+| **Port** | **Service**               |
+| -------- | ------------------------- |
+| 20/21    | FTP (file transfer)       |
+| 22       | SSH (secure remote login) |
+| 25       | SMTP (email sending)      |
+| 53       | DNS (domain name system)  |
+| 80       | HTTP (websites)           |
+| 443      | HTTPS (secure websites)   |
 
 
 ## 13. What is port forwarding?
@@ -218,9 +218,53 @@ Port forwarding (or mapping) is a router configuration that directs external int
 
 It is the standard, local-only equivalent to an internet-facing IP address. 
 
-
-
-
 ## 16. What is Git?
+
+**Git** is a version control system that tracks changes in computer files. It is the industry standard for developers to collaborate on projects, ensuring that no work is lost and that multiple people can work on the same code simultaneously without overwriting each other.
+
+Think of it as a "time machine" for your project. If you make a mistake, you can simply roll back the files to exactly how they were an hour, a day, or a year ago.
+**How Git Works**
+
+**Git is a distributed system**. This means every person working on a project has a full copy of the entire history of the code on their own computer. This makes it incredibly fast and reliable.
+
+**Key Concepts**
+
+* * **Repository (Repo):** A folder that Git is tracking. It contains all your project files and the history of every change made to them.
+
+* * **Commit:** Think of this as a "save point." When you commit your changes, you are telling Git to take a snapshot of your files at that exact moment.
+* * **Branch:** A way to diverge from the main line of work. You can create a branch to experiment with a new feature without affecting the stable "main" version of your project.
+* * **Merge:** The process of taking the changes from one branch and putting them into another (e.g., adding your new feature back into the main project).
+
+
+
+
+
+
+
+
 ## 17. What is GitHub?
 
+![img](github.png)
+GitHub is a cloud-based platform that allows developers to store, manage, and collaborate on code projects using Git version control. It acts as a central hub for hosting software repositories, enabling team collaboration through features like code reviews, bug tracking, and pull requests. Owned by Microsoft, it is widely used for both open-source and private development. 
+Key Aspects of GitHub:
+
+**Git Repository Hosting:** GitHub hosts Git repositories in the cloud, allowing developers to back up code and work from any location.
+**Collaboration Tools:** Features like pull requests, branches, and code reviews enable multiple developers to work on the same project simultaneously without overwriting each other's work.
+**Version Control:** It tracks changes to code over time, allowing users to revert to previous versions if necessary.
+**Social Coding:** Users can follow, fork, and contribute to other people's open-source projects.
+**Project Management:** Includes tools for task management, bug tracking, and documentation (wikis) for projects. 
+
+**Difference Between Git and GitHub:**
+
+**Git** is the actual software tool used for version control, running locally on a developer's computer.
+**GitHub** is the web-based, external service that hosts those Git repositories, adding a user interface and collaboration features. 
+
+GitHub is used by individuals, teams, and large organizations to build, share, and maintain software projects. 
+
+ **Git vs. GitHub difference**
+
+| **Feature**   | **Git**                                             | **GitHub**                                         |
+| ------------- | --------------------------------------------------- | -------------------------------------------------- |
+| What is it?   | The actual software/tool that tracks your files     | A cloud-based hosting service for Git repositories |
+| Where is it?  | Runs locally on your computer (via terminal or app) | Runs on a website (remote server)                  |
+| Core Function | Version control and history                         | Collaboration, sharing, and project management.    |
