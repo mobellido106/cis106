@@ -13,7 +13,7 @@
     * 
     * List all of the directories inside a giving directory without listing their content.
     * `ls -1d wildcard_extra_practice/*/`
-    * ![pic1](../notes7/p1.png)
+    * ![p1](../../notes/notes7/p1.png)
     * list all the files in a given directory that start with letter **f**
     * `ls Downloads/f*.txt`
     * List all the files that contain the word file in the name
@@ -40,9 +40,9 @@
     * `ls *.??`
     * list all the files that contain a 3 letters file extension
     * `ls -1X wildcard_extra_practice/*.???`
-    * ![pic2](../notes7/pic2.png)
-    * 
-    * 
+    * ![pic2](../../notes/notes7/pic2.png)
+ 
+ 
   * **[set] (Square brackets)** 
   * Matches 1 character from as given set
     * **Example**
@@ -63,18 +63,22 @@
   * **Examples**
     * Create 3 html files
     * `touch {index,about,contact}.html`
-    * ![pic5](../notes7/pic5.png)
+    * ![pic5](../../notes/notes7/pic5.png)
+    * 
     * Create 10 files numbered 1 to 10
     * `touch file{1..10}.txt`
-    * ![pic6](../notes7/pic6.png)** 
+    * ![pic6](../../notes/notes7/pic6.png)
+   
      
   * **Brace expansion**
     * `mkdir -p movies/{horror,romance,scifi}/{classic,modern}`
-    * ![pic7a](../notes7/pic7a.png)
+        * ![pic7a](../../notes/notes7/pic7a.png)
    
     * `mkdir -p movies/{horror,romance,scifi}/{classic,modern}`
     * `touch movies/{horror,romance.scifi}/{new-list-rap.1st,old-list-rap.1st}`
     * ![pic7b](../../notes/notes7/pic7b.png)
+     
+     
    
 
 
