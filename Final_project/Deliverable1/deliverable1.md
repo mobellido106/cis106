@@ -269,3 +269,4 @@ GitHub is used by individuals, teams, and large organizations to build, share, a
 | What is it?   | The actual software/tool that tracks your files     | A cloud-based hosting service for Git repositories |
 | Where is it?  | Runs locally on your computer (via terminal or app) | Runs on a website (remote server)                  |
 | Core Function | Version control and history                         | Collaboration, sharing, and project management.    |
+
