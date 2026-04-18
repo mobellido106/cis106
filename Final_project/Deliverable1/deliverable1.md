@@ -21,7 +21,7 @@ The "Performance Powerhouse." Nginx was designed to solve the "C10k problem" (ha
 
 * **Best for:** High-traffic websites, streaming services, and serving static content quickly.
 * **Operating Systems:** Linux, Windows, macOS, Unix.
-* **Latest Version:** 1.28.2 (Stable) / 1.29.5 (Mainline).
+* **Latest Version:** 1.28.2 (Stable) / 1.30.0 (Mainline).
 * **Download:** [nginx](https://nginx.org/)  
 
 ### Caddy
@@ -48,17 +48,18 @@ The "Enterprise Option." IIS is deeply integrated with the Windows ecosystem. It
 The "Speed King." LiteSpeed is a proprietary (paid) server that is a drop-in replacement for Apache. It reads Apache’s configuration files but performs significantly faster, especially for WordPress sites.
 * **Best for:** High-performance web hosting and WordPress optimization.
 * **Operating Systems:** Linux, CloudLinux, FreeBSD.
-* **Latest Version:** 6.3.4 (as of early 2026).
+* **Latest Version:** 6.3.5 (as of early 2026).
 * **Download:** [LiteSpeed](https://www.litespeedtech.com/products/litespeed-web-server/download) 
 
 ### comparison Summary
-| server    | primary strength    | License     | Best for                                                                   |
-| --------- | ------------------- | ----------- | -------------------------------------------------------------------------- |
-| Apache    | Flexibility         | Open-Source | Custom configuration                                                       |
-| Nginx     | High concurrency    | Open-Source | Reverse proxy and high traffic                                             |
-| IIS       | Windows Integration | Proprietary | [ASP.NET](https://dotnet.microsoft.com/en-us/apps/aspnet) & Corporative IT |
-| LiteSpeed | Performance/CMS     | Commercial  | WordPress hosting                                                          |
-| Caddy     | Easy to Use         | Open source | Quick setup/Auto                                                           |
+
+| server    | primary strength    | License                                            | Best for                                                                   |
+| --------- | ------------------- | -------------------------------------------------- | -------------------------------------------------------------------------- |
+| Apache    | Flexibility         | LICENSE-2.4.66,Open-Source                         | Custom configuration                                                       |
+| Nginx     | High concurrency    | Latest stable version Nginx-1.30.0 -Open-Source    | Reverse proxy and high traffic                                             |
+| IIS       | Windows Integration | Latest stable version IIS 10.0 -Proprietary        | [ASP.NET](https://dotnet.microsoft.com/en-us/apps/aspnet) & Corporative IT |
+| LiteSpeed | Performance/CMS     | latest version april 2026 Version 6.3.5-Commercial | WordPress hosting                                                          |
+| Caddy     | Easy to Use         | Latest version 2026  license 2.11.2 -Open source   | Quick setup/Auto                                                           |
 
 
 ## 3. What is virtualization?
