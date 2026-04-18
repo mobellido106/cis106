@@ -1,6 +1,6 @@
 ## 1.  What is a web server? (In the context of software Ex. Apache)
-A web server is a program designed to store, process, and deliver website content (HTML, CSS, images, videos) to users' browsers via the internet. It functions as the "middleman" between the client (browser) and the server's file system, using the Hypertext Transfer Protocol (HTTP/HTTPS) to handle requests and send back responses. 
 ![web](webserver.png)
+A web server is a program designed to store, process, and deliver website content (HTML, CSS, images, videos) to users' browsers via the internet. It functions as the "middleman" between the client (browser) and the server's file system, using the Hypertext Transfer Protocol (HTTP/HTTPS) to handle requests and send back responses.
 
 ## 2. What are some different web server applications? Include definitions, project’s website/where to download it, which operating system is available for and its latest version.
  
@@ -22,7 +22,7 @@ The "Performance Powerhouse." Nginx was designed to solve the "C10k problem" (ha
 * **Best for:** High-traffic websites, streaming services, and serving static content quickly.
 * **Operating Systems:** Linux, Windows, macOS, Unix.
 * **Latest Version:** 1.28.2 (Stable) / 1.29.5 (Mainline).
-* **Download:** [nginx](https://nginx.org/) 
+* **Download:** [nginx](https://nginx.org/)  
 
 ### Caddy
 ![caddy](caddy.png)
@@ -114,9 +114,9 @@ Key aspects of Debian include:
 A firewall is a network security system that acts as a barrier between a trusted internal network and untrusted external networks (like the internet). It monitors and filters incoming and outgoing traffic based on predefined security rules to block malicious, unauthorized, or unwanted data. 
 
 ## 9. What is SSH?
+![img](ssh.jpeg)
 
 **Secure Shell (SSH)** is a cryptographic network protocol that provides a secure, encrypted way to operate network services, such as remote login and file transfers, over an unsecured network like the internet. It was designed to replace older, insecure protocols like Telnet and FTP, which transmit data in plaintext. 
-![img](ssh.jpeg)
 
 **Key Features and Functionality**
 
