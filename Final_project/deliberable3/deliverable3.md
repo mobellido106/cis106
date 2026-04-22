@@ -1,28 +1,16 @@
 # Deliverable 3
 ### Project repository
-* ![ceviche](pic1.png)
-* ![asado](pic2.png)
-* ![paella](pic3.png)
+[My favorite_dishes](https://github.com/mobellido106/project3/blob/main/index.)
+
 
 ### Port Forwarding Examples
 ### Screenshot of the index.html
 ![pic](pic4.png)
 ![pic](pic5.png)
+![pic](pic5.png)
 ![pic](pic6.png)
 
-
-
-### Screenshot5
-![]()
-
-### Screenshot6
-![]()
-
-### Screenshot7
-![]()
-
-### Screenshot8
-![]()
-
-### Screenshot9
-![]()
+### Screenshot pdf
+![pic](pic7.png)
+![pic](pic8.png)
+![pic](pic9.png)
