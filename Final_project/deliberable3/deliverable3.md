@@ -1,6 +1,6 @@
 # Deliverable 3
 ### Project repository
-[My favorite_dishes](https://github.com/mobellido106/project3/blob/main/index.)
+[My favorite_dishes](https://github.com/mobellido106/project3/blob/main/index.md)
 
 
 ### Port Forwarding Examples
