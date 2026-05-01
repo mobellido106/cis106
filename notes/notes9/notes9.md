@@ -94,3 +94,108 @@
 * Replace string on a range of lines
   * `sed '1,3 s/false/true/' joke.json`
 
+ 
+## How to use the pipe (|) for redirecting the output of a command to another.
+  * The **pipe** allows you to redirect the standard **output** of a command to the standard **input** of another.
+
+### Usage:
+  *  `command_1 | command_2 | command_3 |.... | command_N`
+  
+### Examples
+  * Use grep to look for a string in a particular man page
+    * `man ls | grep "human-readable"`
+  
+  * Display only the options of any command from its man page
+    * `man ls | grep "^[[:space:]]*[[:punct:]]"`
+
+  * Display only the 2nd line in a file
+    * `head -2 file.lst | tail -1`
+
+  * Display only the ip address from the output of the ip command
+    * `ip addr | grep -Eo '[[:digit:]]{1,3}\.[[:digit:]]{1,3}\.[[:digit:]]{1,3}\.[[:digit:]][1,3]'`
+
+## How to save the output of a command to a file (>).
+* The **>** operator in Linux is used to ***redirect (save)*** the output of a command into a file instead of displaying it on the screen.
+### Usage/syntax
+* `command > filename`
+
+  * `command`: Generates output
+
+  * `>` redirect output
+  * `filename` file where the output is saved
+
+  * If the file does not exist, it will be **created**
+  * If the file already exists, it will be **overwritten**
+
+### Examples
+  * **Save file list**
+    * `ls > files.txt`
+    
+    * What happens:
+    * `ls` lists all files in the current directory
+    * `Output` is saved into files.txt
+    * `Result:` files.txt contains the list of files
+    
+  * **Save command output**
+     * `date > today.txt`
+      
+     * What happens:
+     * `date` shows current date and time
+     * `Output` is saved into today.txt
+     * `Result:` file contains current date/time
+      
+  * **Save filtered results**
+     * `grep "error" log.txt > errors.txt`
+      
+     * What happens:
+     * `grep "error" log.txt` finds lines with "error"
+     * `Output` is saved into errors.txt
+     * `Result:` only error lines are stored
+      
+  * **Important Note**
+     * Using `>` will erase existing content in the file.
+     * If you **do not want to overwrite** the file, use `>>` instead.
+
+### How to append the output of a command to a file.
+* The **append operator** (>>) is used to **add the output of a command to the end of a file** without deleting what is already inside
+### Usage/syntax
+* `  command >>filename`
+  * `command`: generates output
+  * `>>`  appends output
+  * `filename` file where output is added
+
+  * If the file **does not exist**, it will be created
+  * If the file **exists**, new content is added **at the end**
+### Examples
+ * **Append text to a file**
+   * `echo "Hello World" >> **notes.txt`
+    
+   * What happens:
+   * Adds `"Hello World"` to the end of `notes.txt`
+   * Result: existing content stays, new line is added 
+
+ * **Append command output**
+   * `date >> log.txt`
+   * 
+   * What happens:
+   * Current date/time is added to `log.txt` each time you run it
+   * Useful for keeping logs over time
+
+* **Append filtered results**
+  * `grep "error" system.log >> errors.txt`
+  * What happens:
+  * Finds lines with `"error"` in `system.log`
+  * Adds them to `errors.txt` without deleting previous entries
+  * Result: growing list of errors
+ 
+* **Combine with pipes**
+  * `ls | grep ".sh" >> scripts.txt`
+ 
+  * What happens:
+  * Lists files
+  * Filters `.sh` files
+  * Appends results to `scripts.txt`
+  * Result: keeps adding new script names over time
+ 
+
+
